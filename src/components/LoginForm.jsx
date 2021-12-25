@@ -38,8 +38,9 @@ const Modal = () => {
             <button type="submit" className="button">
 
               <span>Start chatting</span>
-              <span>Don't have an account? Click<Link to="/signup">here</Link> to sign up</span>
-            </button>
+              
+            </button> 
+            <span>Don't have an account? Click<Link to="/signup">here</Link> to sign up</span>
           </div>
         </form>
         <h1>{error}</h1>
