@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Link} from 'react-router-dom';
 
 const projectID = 'c293b89d-a099-49a2-b475-2969904f3c6a';
 
@@ -35,7 +36,9 @@ const Modal = () => {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
           <div align="center">
             <button type="submit" className="button">
+
               <span>Start chatting</span>
+              <span>Don't have an account? Click<Link to="/signup">here</Link> to sign up</span>
             </button>
           </div>
         </form>
